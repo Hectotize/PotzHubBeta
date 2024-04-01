@@ -5757,6 +5757,11 @@ local Input = Tabs.Misc:AddInput("Input", {
     end
 })
 
+Input:OnChanged(function()
+    print("Job ID:", Input.Value)
+end)
+end
+
 Tabs.Misc:AddButton({
 	Title = "Join Server",
 	Description = "",
